@@ -1,0 +1,81 @@
+
+.all_items{
+    padding: 20px;
+    background-color: #FFFFFF;
+    width: 400px;
+    justify-content: center;
+    position: relative;
+    left: 550px;
+    top: 170px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.heading{
+    justify-items: center;
+    font-family: sans-serif;
+    
+}
+.input_div input{
+    margin-top: 20px;
+    gap: 40px;
+    padding-top: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 300px;
+    border: 1px solid gray;
+    /* border-color: #1877F2; */
+    margin-left: 50px;
+}
+.input_div input::placeholder{
+    font-size: 16px;
+    
+}
+.login_btn{
+    margin-top: 20px;
+    gap: 30px;
+    margin-left: 50px;
+}
+.login_btn button{
+    width: 300px;
+    height: 40px;
+    background-color: #1877F2;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.login_btn button:hover{
+    background-color: #357abd;
+    transform: translate(0.5);
+  }
+  
+.forget_btn{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.forget_btn a{
+    text-decoration: none;
+    color: #1877F2;
+}
+.create_btn{
+    margin-top: 40px;
+
+}
+.create_btn button{
+    background-color: #42B72A;
+    color: white;
+    height: 40px;
+    width: 200px;
+    padding: 5px;
+    justify-content: center;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-left: 100px;
+}
+.create_btn button:hover{
+    background-color: #5aaa4a;
+}
