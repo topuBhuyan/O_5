@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color:beige;
+        font-family: sans-serif;
+        font-weight: bolde;
+    }
+    #clock{
+        font-size: 22px;
+        border-radius: 8px;
+        background-color: rgb(247, 103, 103);
+        width: 150px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="clock"></div>
+
+    <script>
+        var sec = 0;
+        var min = 0;
+        var hrs = 0;
+    
+        $(document).ready(function() {
+            setInterval(function() {
+                sec++;
+                if(sec == 60) {
+                    min++;
+                    sec = 0;
+    
+                    if(min == 60) {
+                        hrs++;
+                        min = 0;
+                    }
+    
+                    if(hrs == 24) {
+                        hrs = 0;
+                    }
+                }
+                var period = hrs >= 12 ? 'PM' : 'AM';
+                $('#clock').html(hrs+ ":" +min+ ":"+sec+" "+period);
+            }, 1000);
+        })
+        setInterval(ready, 1000);
+        ready(); 
+    </script>
+    
+</body>
+</html>
